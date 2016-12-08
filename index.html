@@ -3,11 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
+  <title>ANQUAN CAPITAL</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
@@ -133,8 +135,8 @@
         <p>PhD in Engineering</p>
         <p>The elegant beauty of skiing, curiosity, reading non-fiction</p>
 
-        <p style="padding-top: 45px;"><em>‘Simplicity is the ultimate sophistication’</em></p>
-        <p>-Leonardo da Vinci</p>
+        <!-- <p style="padding-top: 45px;"><em>‘Simplicity is the ultimate sophistication’</em></p>
+        <p>-Leonardo da Vinci</p> -->
       </div>
     </div>
     <div class="col-md-4 col-sm-12 section-card">
@@ -146,8 +148,8 @@
         <p>PhD in Computer Science</p>
         <p>Drumming like there is no tomorrow</p>
 
-        <p style="padding-top: 45px;"><em>‘Simplicity is the ultimate sophistication’</em></p>
-        <p>-Leonardo da Vinci</p>
+        <!-- <p style="padding-top: 45px;"><em>‘Simplicity is the ultimate sophistication’</em></p>
+        <p>-Leonardo da Vinci</p> -->
       </div>
     </div>
   </div>
@@ -170,10 +172,13 @@
       <div class="col-md-8 col-sm-12 col-xs-12 section-card">
         <div class="blue pad-right">
           <h2>CONTACT US</h2>
-          <form class="contact-form" action="index.html" method="post">
-            <input type="text" name="name" placeholder="NAME" value="">
-            <input type="text" name="email" placeholder="EMAIL" value="">
-            <textarea name="message" rows="8" placeholder="MESSAGE" cols="80"></textarea>
+          <form class="contact-form" action="https://formspree.io/max@anquancapital.com"
+      method="POST">
+            <input class="contact-form-input" type="text" name="name" placeholder="NAME" value="" required="true">
+            <input class="contact-form-input" type="text" name="_replyto" placeholder="EMAIL" value="" required="true">
+            <textarea class="contact-form-input" name="message" rows="8" placeholder="MESSAGE" cols="80" required="true"></textarea>
+            <input class="button submit" type="submit" name="name" value="SEND">
+            <button class="button clear" id="clear">CLEAR</button>
           </form>
         </div>
       </div>
@@ -202,6 +207,9 @@
   <script type="text/javascript" src="js/skrollr.js"></script>
   <script type="text/javascript">
   var s = skrollr.init();
+  $('#clear').click(function(){
+    $('.contact-form-input').val("");
+  });
   </script>
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
