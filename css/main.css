@@ -309,7 +309,6 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
 }
 
@@ -348,6 +347,25 @@ body {
 
 .contact-form>input:focus,.contact-form>textarea:focus {
   outline-color: #545874;
+}
+
+.button,.button.submit, .button.clear {
+  margin-top: 20px;
+  margin-right: 20px;
+  background: #545874;
+  font-size: 1.5em;
+  border: none;
+  flex-grow: 1;
+  -webkit-transition: background 0.25s, color 0.25s; /* Safari */
+  transition: background 0.25s, color 0.25s;
+}
+
+.button:hover,.button.submit:hover, .button.clear:hover {
+  background: #FFFFFF;
+  color: #171c32;
+  font-size: 1.5em;
+  border: none;
+  flex-grow: 1;
 }
 
 .address>p {
