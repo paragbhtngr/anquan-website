@@ -112,6 +112,7 @@ body {
 #bs-example-navbar-collapse-1 > ul > li > a {
   padding-top: 30px;
   color: #545874;
+  transition: color 0.25s;
 }
 
 #bs-example-navbar-collapse-1 > ul > li > a:hover {
@@ -154,7 +155,7 @@ body {
 
 .section.header {
   background: #545874;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .section.footer {
