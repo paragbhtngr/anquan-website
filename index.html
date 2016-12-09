@@ -33,7 +33,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#"><img src="./img/3.png" alt="" data-400="opacity: 0;" data-500="opacity: 1;"></a>
+        <a class="navbar-brand" href="#"><img src="./img/3.png" alt="" style="opacity: 0;" data-400="opacity: 0;" data-500="opacity: 1;"></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -47,13 +47,14 @@
     </div><!-- /.container-fluid -->
   </nav>
 
-  <div class="section header clearfix">
+  <div id="skrollr-body">
+    <div class="section header clearfix">
     <div class="table-row">
       <div class="col-md-4 hidden-sm hidden-xs section-card" style="min-height: 60vh;">
         <div class="blue pad-right">
         </div>
       </div>
-      <div class="col-md-8 section-card">
+      <div class="col-md-8 section-card" style="min-height: 60vh;">
         <div class="blue" id="anquan-section">
           <h1>ANQUAN CAPITAL</h1>
         </div>
@@ -199,7 +200,7 @@
           <h2>EMAIL</h2>
           <p>max@anquancapital.com</p>
         </div>
-        <div class="blue address pad-s-top">
+        <div class="blue address pad-s-top" id="last-card">
           <h2>ADDRESS</h2>
           <p>The Hangar</p>
           <p>21 Heng Mui Keng Terrace</p>
@@ -208,6 +209,7 @@
       </div>
     </div>
   </div>
+  
 
 
 
@@ -219,7 +221,9 @@
   <script type="text/javascript" src="js/skrollr.js"></script>
   <script type="text/javascript">
   var s = skrollr.init();
-  $('#clear').click(function(){
+  </script>
+  <script type="text/javascript">
+    $('#clear').click(function(){
     $('.contact-form-input').val("");
   });
   </script>

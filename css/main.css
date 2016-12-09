@@ -96,8 +96,12 @@ Author's custom styles
 ========================================================================== */
 
 @font-face {
-  font-family: 'Jaapokki';
-  src: url("../fonts/Jaapokki-Regular.otf");
+    font-family: 'Jaapokki';
+    src: url('jaapokki-regular-webfont.woff2') format('woff2'),
+         url('jaapokki-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 body {
@@ -108,6 +112,7 @@ body {
   background: none;
   border-color: transparent !important;
   font-family: 'Lato', sans-serif;
+  width: 100vw;
   font-size: 1.5em;
   padding-top: 10px;
   padding-left: 20px;
@@ -178,76 +183,6 @@ body {
 .section-card > div {
   width: 100%;
   padding: 60px;
-}
-
-@media screen and (min-width: 992px) {
-  .section-card > .pad-left {
-    width: calc(100% - 20px);
-    margin-left: 20px;
-  }
-
-  .section-card > .pad-right {
-    width: calc(100% - 20px);
-    margin-right: 20px;
-  }
-
-  .section-card > .pad-left.pad-right {
-    width: calc(100% - 40px);
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .section-card > .pad-top {
-    margin-top: 20px;
-  }
-
-  .section-card > .pad-bottom {
-    margin-bottom: 20px;
-  }
-
-  .section-card > .pad-top.pad-bottom {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-}
-
-@media screen and (max-width: 991px) {
-  * {
-    text-align: center;
-  }
-
-  #anquan-section {
-    justify-content: center;
-  }
-  .section-card > .pad-s-left {
-    width: calc(100% - 20px);
-    margin-left: 20px;
-  }
-
-  .section-card > .pad-s-right {
-    width: calc(100% - 20px);
-    margin-right: 20px;
-  }
-
-  .section-card > .pad-s-left.pad-s-right {
-    width: calc(100% - 40px);
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .section-card > .pad-s-top {
-    margin-top: 20px;
-  }
-
-  .section-card > .pad-s-bottom {
-    margin-bottom: 20px;
-  }
-
-  .section-card > .pad-s-top.pad-s-bottom {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
 }
 
 .table-row {
@@ -401,9 +336,110 @@ body {
 }
 
 
+@media screen and (min-width: 992px) {
+  .section-card > .pad-left {
+    width: calc(100% - 20px);
+    margin-left: 20px;
+  }
 
+  .section-card > .pad-right {
+    width: calc(100% - 20px);
+    margin-right: 20px;
+  }
 
+  .section-card > .pad-left.pad-right {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 
+  .section-card > .pad-top {
+    margin-top: 20px;
+  }
+
+  .section-card > .pad-bottom {
+    margin-bottom: 20px;
+  }
+
+  .section-card > .pad-top.pad-bottom {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+}
+
+@media screen and (max-width: 991px) {
+  * {
+    text-align: center;
+  }
+
+  #anquan-section {
+    justify-content: center;
+  }
+
+  .section-card {
+    width: 100%;
+  }
+
+  .section-card > div {
+    padding: 20px;
+  }
+
+  .section-card > .pad-s-left {
+    width: calc(100% - 20px);
+    margin-left: 20px;
+  }
+
+  .section-card > .pad-s-right {
+    width: calc(100% - 20px);
+    margin-right: 20px;
+  }
+
+  .section-card > .pad-s-left.pad-s-right {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .section-card > .pad-s-top {
+    margin-top: 20px;
+  }
+
+  .section-card > .pad-s-bottom {
+    margin-bottom: 20px;
+  }
+
+  .section-card > .pad-s-top.pad-s-bottom {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .grey>h2, .blue>h2 {
+    font-size: 1.3em;
+  }
+
+  .grey>p, .grey>ul>li {
+    font-size: 1em;
+    text-align: left;
+  }
+
+  .contact-form {
+    margin-right: -20px;
+  }
+
+  .contact-form>input, .contact-form>textarea {
+    font-size: 1.2em;
+  }
+
+  #anquan-section, #tagline-section {
+    padding-right: 20px;
+  }
+
+  .profile>img {
+    max-width: 200px;
+  }
+
+}
 
 /* ==========================================================================
 Helper classes
