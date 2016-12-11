@@ -39,9 +39,9 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">TEAM</a></li>
-          <li><a href="#">LABS</a></li>
-          <li><a href="#">JOIN US</a></li>
+          <li><a id="team-link">TEAM</a></li>
+          <!-- <li><a id="labs-link">LABS</a></li> -->
+          <li><a id="join-us-link">JOIN US</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -118,7 +118,7 @@
         </div>
         <br>
         <div class="market-process col-sm-12">
-          <h2>OUR PROCESS</h2>
+          <h3>OUR PROCESS</h3>
           <br>
           <div class="process-item">
             <div class="process-point">
@@ -176,7 +176,7 @@
       </div>
     </div>
   </div>
-  <div class="table-row">
+  <div class="table-row" id="team">
     <div class="col-md-4 col-sm-12 section-card">
       <div class="grey pad-left pad-right pad-top pad-s-top pad-s-left pad-s-right profile">
         <img src="./img/max-profile.png" alt="">
@@ -223,7 +223,7 @@
       </div>
     </div>
   </div>
-  <div class="table-row">
+  <div class="table-row" id="join-us">
     <div class="col-md-8 section-card">
       <div class="grey pad-right pad-left pad-top pad-bottom pad-s-top pad-s-left pad-s-right pad-s-bottom">
         <h2>CAREERS</h2>
@@ -240,7 +240,7 @@
   <div class="section footer">
     <div class="table-row">
       <div class="col-md-8 col-sm-12 col-xs-12 section-card">
-        <div class="blue pad-right">
+        <div class="blue pad-right">1
           <h2>CONTACT US</h2>
           <form class="contact-form" action="https://formspree.io/max@anquancapital.com"
       method="POST">
@@ -280,9 +280,23 @@
   var s = skrollr.init();
   </script>
   <script type="text/javascript">
+    $("#team-link").click(function() {
+      $('html, body').animate({
+        scrollTop: $("#team").offset().top - 95
+      }, 500);
+      $('.navbar-toggle').click();
+    });
+
+    $("#join-us-link").click(function() {
+      $('html, body').animate({
+        scrollTop: $("#join-us").offset().top - 95
+      }, 500);
+      $('.navbar-toggle').click();
+    });
+
     $('#clear').click(function(){
-    $('.contact-form-input').val("");
-  });
+      $('.contact-form-input').val("");
+    });
   </script>
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
