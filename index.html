@@ -178,7 +178,7 @@
   </div>
   <div class="table-row" id="team">
     <div class="col-md-4 col-sm-12 section-card">
-      <div class="grey pad-left pad-right pad-top pad-s-top pad-s-left pad-s-right profile">
+      <div class="grey pad-left pad-top pad-s-top pad-s-left pad-s-right profile">
         <img src="./img/max-profile.png" alt="">
         <h2>MAX KANTELIA</h2>
         <h4>BUSINESS DEVELOPMENT & STRATEGY</h4>
@@ -193,7 +193,7 @@
       </div>
     </div>
     <div class="col-md-4 col-sm-12 section-card">
-      <div class="grey pad-right pad-top pad-s-top pad-s-left pad-s-right profile">
+      <div class="grey pad-left pad-top pad-s-top pad-s-left pad-s-right profile">
         <img src="./img/juzar-profile.png" alt="">
         <h2>JUZAR MOTIWALLA</h2>
         <h4>STRATEGY AND ACCELERATION</h4>
@@ -208,7 +208,7 @@
       </div>
     </div>
     <div class="col-md-4 col-sm-12 section-card">
-      <div class="grey pad-right pad-top pad-s-top pad-s-left pad-s-right profile">
+      <div class="grey pad-left pad-right pad-top pad-s-top pad-s-left pad-s-right profile">
         <img src="./img/prateek-profile.png" alt="">
         <h2>PRATEEK SAXENA</h2>
         <h4>TECHNOLOGY STRATEGY</h4>
@@ -240,7 +240,7 @@
   <div class="section footer">
     <div class="table-row">
       <div class="col-md-8 col-sm-12 col-xs-12 section-card">
-        <div class="blue pad-right">1
+        <div class="blue pad-right">
           <h2>CONTACT US</h2>
           <form class="contact-form" action="https://formspree.io/max@anquancapital.com"
       method="POST">
@@ -284,14 +284,18 @@
       $('html, body').animate({
         scrollTop: $("#team").offset().top - 95
       }, 500);
-      $('.navbar-toggle').click();
+      if($(".navbar-toggle").is(":visible")) {
+        $('.navbar-toggle').click();
+      }
     });
 
     $("#join-us-link").click(function() {
       $('html, body').animate({
         scrollTop: $("#join-us").offset().top - 95
       }, 500);
-      $('.navbar-toggle').click();
+      if($(".navbar-toggle").is(":visible")) {
+        $('.navbar-toggle').click();
+      }
     });
 
     $('#clear').click(function(){
