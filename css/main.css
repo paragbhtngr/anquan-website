@@ -414,6 +414,10 @@ a:hover {
   margin-bottom: 10px;
 }
 
+.process-point+p {
+  margin-left: 33px;
+}
+
 .partners {
   text-align: center;
 }
