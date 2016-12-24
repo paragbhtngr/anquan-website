@@ -232,6 +232,7 @@ a:hover {
 
 #made-in-sg>h3 {
   opacity: 0.1;
+  font-size: 1.25em;
 }
 
 #anquan-section {
@@ -427,7 +428,12 @@ a:hover {
 .partners-list>img {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
-  max-height: 150px;
+  max-height: 100px;
+}
+
+#last-card {
+  background-image: url("../img/address.jpg");
+  background-size: cover;
 }
 
 @media screen and (min-width: 992px) {
