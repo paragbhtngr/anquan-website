@@ -39,7 +39,10 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
         <ul class="nav navbar-nav navbar-right">
+          <li><a id="tech-link">TECH</a></li>
+          <li><a id="market-link">MARKET</a></li>
           <li><a id="team-link">TEAM</a></li>
+          <li><a id="partners-link">PARTNERS</a></li>
           <!-- <li><a id="labs-link">LABS</a></li> -->
           <li><a id="join-us-link">JOIN US</a></li>
         </ul>
@@ -73,7 +76,7 @@
       </div>
     </div>
   </div>
-  <div class="table-row">
+  <div class="table-row" id="tech">
     <div class="col-md-4 hidden-sm hidden-xs section-card">
       <div class="grey pad-right pad-left pad-top image-container">
         <img src="./img/tech.png" alt="">
@@ -103,7 +106,7 @@
       </div>
     </div>
   </div>
-  <div class="table-row">
+  <div class="table-row" id="market">
     <div class="col-md-8 section-card">
       <div class="grey pad-right pad-left pad-top pad-s-top pad-s-left pad-s-right">
         <h2>PRODUCTS & MARKETPLACES</h2>
@@ -225,7 +228,7 @@
       </div>
     </div>
   </div>
-  <div class="table-row" id="join-us">
+  <div class="table-row" id="partners">
     <div class="col-md-12 col-sm-12 section-card">
       <div class="grey partners pad-right pad-left pad-top pad-s-top pad-s-left pad-s-right">
         <h2>PARTNERS</h2>
@@ -296,9 +299,36 @@
   var s = skrollr.init();
   </script>
   <script type="text/javascript">
+    $("#tech-link").click(function() {
+      $('html, body').animate({
+        scrollTop: $("#tech").offset().top - 95
+      }, 500);
+      if($(".navbar-toggle").is(":visible")) {
+        $('.navbar-toggle').click();
+      }
+    });
+
+    $("#market-link").click(function() {
+      $('html, body').animate({
+        scrollTop: $("#market").offset().top - 95
+      }, 500);
+      if($(".navbar-toggle").is(":visible")) {
+        $('.navbar-toggle').click();
+      }
+    });
+
     $("#team-link").click(function() {
       $('html, body').animate({
         scrollTop: $("#team").offset().top - 95
+      }, 500);
+      if($(".navbar-toggle").is(":visible")) {
+        $('.navbar-toggle').click();
+      }
+    });
+
+    $("#partners-link").click(function() {
+      $('html, body').animate({
+        scrollTop: $("#partners").offset().top - 95
       }, 500);
       if($(".navbar-toggle").is(":visible")) {
         $('.navbar-toggle').click();
